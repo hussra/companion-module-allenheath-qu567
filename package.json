@@ -2,30 +2,32 @@
   "name": "companion-module-allenheath-qu567",
   "version": "1.0.0",
   "description": "Allen & Heath Qu-5/6/7 MIDI over TCP companion module",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
-  "keywords": [
-    "companion-module",
-    "allenheath",
-    "qu5",
-    "qu6",
-    "qu7",
-    "audio",
-    "midi"
-  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfocus/companion-module-allenheath-qu567.git"
+  },
+  "engines": {
+    "node": "^22.20",
+    "yarn": "^4"
+  },
   "scripts": {
-    "build": "webpack --config webpack.config.cjs",
-    "watch": "webpack --config webpack.config.cjs --watch"
+    "format": "prettier -w .",
+    "package": "companion-module-build",
+    "lint:raw": "eslint",
+		"lint": "yarn lint:raw ."
   },
   "author": "Bamagastudios",
-  "license": "MIT",
   "dependencies": {
     "@companion-module/base": "^1.14.1"
   },
   "devDependencies": {
-    "@companion-module/tools": "^1.5.2",
-    "tar": "^7.5.13",
-    "webpack": "^5.105.4",
-    "webpack-cli": "^7.0.2"
-  }
+    "@companion-module/tools": "^2.6.1",
+    "eslint": "^10.2.1",
+    "prettier": "^3.7.4"
+  },
+  "prettier": "@companion-module/tools/.prettierrc.json",
+  "packageManager": "yarn@4.12.0"
 }

@@ -1,7 +1,8 @@
 node_modules/
-*.tgz
-*.tar.gz
+package-lock.json
+/pkg
+/*.tgz
+DEBUG-*
+/.yarn
 .DS_Store
 Thumbs.db
-.env
-dist/

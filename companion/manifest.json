@@ -1,17 +1,28 @@
 {
+  "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
   "id": "allenheath-qu567",
   "name": "Allen & Heath Qu-5/6/7",
-  "version": "1.0.0",
-  "category": "audio",
   "shortname": "A&H Qu567",
-  "manufacturer": "Allen & Heath",
   "description": "Control Allen & Heath Qu-5/6/7 mixers via MIDI over TCP",
-  "products": ["Qu-5", "Qu-6", "Qu-7"],
-  "keywords": ["allenheath", "qu5", "qu6", "qu7", "audio", "mixer", "midi"],
-  "author": "Bamagastudios",
+  "version": "0.0.0",
   "license": "MIT",
-  "legacyIds": [],
+  "category": "audio",
+  "repository": "git+https://github.com/bitfocus/companion-module-allenheath-qu567.git",
+	"bugs": "https://github.com/bitfocus/companion-module-allenheath-qu567/issues",
+	"maintainers": [
+		{
+			"name": "Bamagastudios",
+			"email": "Tech@bamagastudios.com"
+		}
+	],
   "runtime": {
-    "type": "node18"
-  }
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../src/main.js"
+	},
+  "legacyIds": [],
+  "manufacturer": "Allen & Heath",
+  "products": ["Qu-5", "Qu-6", "Qu-7"],
+  "keywords": ["allenheath", "qu5", "qu6", "qu7", "audio", "mixer", "midi"]
 }

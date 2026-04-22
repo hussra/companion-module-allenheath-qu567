@@ -1,4 +1,4 @@
-export function getPresets(instance) {
+export function getPresets(_instance) {
 	const presets = {}
 
 	// ─── MUTE PRESETS ─────────────────────────────────────────
